@@ -1,67 +1,84 @@
 @charset "UTF-8";
 
-body{
+:root{
+   --cor0:#57c4ff;
+   --cor1: #39B1F0;
+   --cor2:#1772A3;
+   --cor3:#F0A03A;
+   --cor4:#A35F07;
+}
+
+*{
     margin: 0px;
-    background-color: #39B1F0;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background-color:var(--cor1);
+    background-image: url("imagens/jeremy-bishop-1braZySlEKA-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 header{
-    background-image:linear-gradient(to bottom, #39B1F0, #57C4FF);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     text-align: center;
+    margin: 0px;
     border: 1px solid black;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.192);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.575);
+    padding: 50px;
+
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.247);
+    
+    
 }
 
 #apresentacao{
-    background-image: url('imagens/despina-galani-nDjCL1UqpGc-unsplash.jpg');
+    background-image: url("imagens/despina-galani-nDjCL1UqpGc-unsplash.jpg");
     background-size: cover;
-    background-position: center center;
-    border: 1px solid black;
-    height: 500px;
-    max-width: 650px;
-    
+    background-position: left center;
+    background-attachment: local;
+    height: 400px;
+    max-width: 750px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.342);
 }
+
 #apresentacao>p{
-    background-color: rgba(255, 255, 255, 0.863);
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.836);
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    text-align: center;
+    padding: 10px;
+    width: 660px;
+    font-variant: small-caps;
     font-size: 1.3em;
-    text-indent: 10px;
-    padding: 20px;
-    margin: auto;
-    width: fit-content;
-
+    color: rgba(0, 0, 0, 0.877);
+    
 }
 
 main{
     background-color: white;
-    width: 600px;
+    max-width: 650px;
     padding: 10px;
     margin: auto;
 }
 
 .texto{
-    background-image: url("imagens/pexels-pixabay-37730.jpg");
-    background-position: bottom center;
+    background-color: #1772A3;
+    padding-top: 20vh;
     text-align: center;
-    padding: 10px;
+    padding: 20vh;
 }
-
-#text1{
-    background-color: rgba(255, 255, 255, 0.671);
-    width: 400px;
-    margin: auto;
-    border: 1px solid rgba(0, 0, 0, 0.438);
-    padding: 10px;
-    border-radius: 3px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
-
-    color: rgb(0, 0, 0);
-   
-    
+.comentario{
+    background-color: white;
+    margin-top: 20px;
 }
