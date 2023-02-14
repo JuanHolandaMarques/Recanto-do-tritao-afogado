@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 
 :root{
    --cor0:#57c4ff;
@@ -6,6 +10,9 @@
    --cor2:#1772A3;
    --cor3:#F0A03A;
    --cor4:#A35F07;
+   --font1: 'Amatic SC', 'cursive', 'serif';
+   --font2: 'Dancing Script', 'cursive', serif;
+   --font3: 'Sriracha', 'cursive';
 }
 
 *{
@@ -14,71 +21,104 @@
 }
 
 body{
+    background-color: var(--cor2);
     min-height: 100vh;
-    background-color:var(--cor1);
-    background-image: url("imagens/jeremy-bishop-1braZySlEKA-unsplash.jpg");
-    height: 100vh;
+    background-color:var(--cor2);
     background-size: cover;
     background-attachment: fixed;
     
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2)) ;
+    font-family: var(--font2);
+    font-size: large;
     text-align: center;
+    color: rgb(255, 255, 255);
+
     margin: 0px;
-    border: 1px solid black;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.575);
+
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.575);
     padding: 50px;
 
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.247);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.856);
     
     
 }
 
 #apresentacao{
-    background-image: url("imagens/despina-galani-nDjCL1UqpGc-unsplash.jpg");
+    background-image: url("imagens/bar-tritão-afogado.jpg");
     background-size: cover;
     background-position: left center;
-    background-attachment: local;
+    background-attachment: fixed;
     height: 400px;
-    max-width: 750px;
+    max-width: 670px;
+    padding: 0px;
     margin: auto;
-    padding: 20px;
+
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.568);
+    border: 1px solid rgba(0, 0, 0, 0.507);
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.342);
 }
 
 #apresentacao>p{
-    background-color: rgba(255, 255, 255, 0.836);
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    background-color: rgba(0, 0, 0, 0.753);
     padding: 10px;
-    width: 660px;
-    font-variant: small-caps;
-    font-size: 1.3em;
-    color: rgba(0, 0, 0, 0.877);
-    
-}
-
-main{
-    background-color: white;
-    max-width: 650px;
-    padding: 10px;
+    max-width: 600px;
+    font-family: 'Amatic SC', 'cursive';
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
     margin: auto;
 }
 
-.texto{
-    background-color: #1772A3;
-    padding-top: 20vh;
-    text-align: center;
-    padding: 20vh;
+main{
+    background-image: url("imagens/pexels-francesco-ungaro-4620496.jpg");
+
+    background-attachment: fixed;
+    max-width: 670px;
+    margin: auto;
+
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.555);
 }
+
+.texto{ 
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: var(--font3);
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.356);
+
+}
+.texto>article>h1,p{
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
+
+    font-size: 1.3em;
+    
+}
+
 .comentario{
-    background-color: white;
-    margin-top: 20px;
+    background-color: rgba(255, 253, 253, 0.363);
+    margin-top: 60px;
+    padding: 10px;
+
+    font-family: var(--font1);
+    color: rgb(0, 0, 0);
+    font-size: 1.7em;
+    text-shadow: 0px 0px 1px black;
+    
+}
+
+#text1{
+    background-image: url("imagens/pexels-pixabay-37730.jpg");
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: fixed;
+    margin: auto;
+    
 }
