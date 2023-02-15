@@ -21,12 +21,9 @@
 }
 
 body{
-    background-color: var(--cor2);
     min-height: 100vh;
-    background-color:var(--cor2);
-    background-size: cover;
-    background-attachment: fixed;
-    
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1), var(--cor2));
+    background-color:var(--cor2);   
 }
 
 header{
@@ -46,12 +43,29 @@ header{
     
     
 }
+header>.link{
+    display: inline-block;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding: 2px;
+    font-size: 0.8em;
+
+}
+header>.link:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color:rgba(216, 215, 215, 0.144) ;
+    margin-top: 20px;
+    padding: 2px;
+    border-radius: 10px;
+    
+}
 
 #apresentacao{
     background-image: url("imagens/bar-tritão-afogado.jpg");
     background-size: cover;
     background-position: left center;
-    background-attachment: fixed;
     height: 400px;
     max-width: 670px;
     padding: 0px;
@@ -73,13 +87,13 @@ header{
 }
 
 main{
-    background-image: url("imagens/pexels-francesco-ungaro-4620496.jpg");
-
+    background-size: cover;
     background-attachment: fixed;
     max-width: 670px;
     margin: auto;
-
+    
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.555);
+
 }
 
 .texto{ 
@@ -87,38 +101,96 @@ main{
     text-align: center;
     padding-bottom: 50px;
     font-family: var(--font3);
-    border: 1px solid rgba(0, 0, 0, 0.178);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.356);
-
+    text-indent: 20px;
 }
 .texto>article>h1,p{
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(226, 226, 226, 0.541);
     border-radius: 3px;
-    color: rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
     padding: 10px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
-
+    
     font-size: 1.3em;
     
 }
 
 .comentario{
-    background-color: rgba(255, 253, 253, 0.363);
+    background-color: rgba(19, 19, 19, 0.712);
     margin-top: 60px;
     padding: 10px;
 
     font-family: var(--font1);
-    color: rgb(0, 0, 0);
+    color: rgb(253, 252, 252);
     font-size: 1.7em;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 1px 1px 1px black;
     
 }
 
 #text1{
-    background-image: url("imagens/pexels-pixabay-37730.jpg");
+    background-image: url("imagens/almirante.jpg");
     background-size: cover;
-    background-position: right bottom;
+    background-position: bottom right;
     background-attachment: fixed;
     margin: auto;
     
 }
+
+#text2{
+    background-image: url("imagens/reencontros.jpg");
+    background-size: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+    
+}
+#text3{
+    background-image: url("imagens/coracao-amarelo.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+    
+}
+
+
+#text4{
+    background-image: url("imagens/super-heroina.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+    
+}
+
+#text5{
+    background-image: url("imagens/apocalipse.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+    
+}
+
+footer>p{
+    background-color: #125a81;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid black;
+    
+}
+
+
+.link{
+    color: white;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: rgb(228, 222, 222);
+    background-color:rgba(216, 215, 215, 0.315) ;
+    border-radius: 10px;
+    padding: 2px;
+}
+
